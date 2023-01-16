@@ -1,0 +1,44 @@
+
+<!-- maybe when th eapi loads you make the button shake -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <script defer src="./script.js"></script>
+    <script defer src="./button.js"></script>
+    <link rel="stylesheet" href="./homeStyles.css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>What Should I Watch Today App Homepage</title>
+  </head>
+  <body>
+    <header>
+        <img src="https://media.giphy.com/media/dQfHoGjAXk8S0HPDuD/giphy.gif?cid=ecf05e47e3d1e3969fd3fd9fb071361bf84c74f9aabba5fd&rid=giphy.gif&ct=s" style="width: 20%; max-width: 50%; height: auto;">
+        <h1> What To Watch</h1>
+    </header>
+    </div>
+    <div class="buttonNavDiv"> 
+        <button type="button" class="show-nav-home-btn" onclick="show()"> Let's Watch <span class="caret down"></span></button> 
+       <nav class="navigation">
+            <ul class="navigation">
+              <form>
+                <li> <input type="text" class="search-input" placeholder="Something Specific"><button type="submit" class="search-btn"><i class="fa fa-search"></i> </button></li>
+              </form>
+              <div class="somethings">
+                <!-- <li><a href="home.html"> Homepage </a></li> -->
+                <li><a href="funny.html"> Something Funny</a></li>
+                <li><a href="anime.html"> Cartoon/ Anime</a> </li>
+                <li><a href="scary.html"> Something Scary</a></li>
+                <li><a href="romantics.html" > Something Romantic</a> </li>
+                <li><a href="educative.html"> Something Educational </a></li>
+                <li><a href="inspirational.html"> Something Inspiring </a> </li>
+                <li><a href="randoms.html"> Something Random</a></li>
+              </div>
+            </ul>
+       </nav>
+    </div>
+</body>
+</html>
+   
+    <!-- we should work on getting the search bar integrated with the api and then go from there -->
