@@ -1,4 +1,6 @@
-const watchModeKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`
+require('dotenv').config();
+
+const watchModeKey = process.env.wmAPIKEY;
 //this fetch gets titles og comedy genre and deconstructs the data 
 const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey + `&genres=4`;
 fetch(watchModeTitlesApi)
@@ -33,16 +35,12 @@ const watchModeNetworksApi = `https://api.watchmode.com/v1/sources/?apiKey=` + w
 fetch(watchModeNetworksApi).then((response) => response.json()).then((watchModeNetworksData) => {
 
 watchModeNetworksData.forEach((network) => {
-console.log(network.name)
+
 if (network.name.includes(networkName)) {
 
 document.querySelector('.network-logo').src = network.logo_100px;
 document.querySelector('.network-link').href = network.ios_appstore_url
-
-console.log(network.ios_appstore_url)
 }
-}).catch((error) => {
-console.log(error);
 })
 })
 //ypu can try incorporating the moving video to make it look cooler
