@@ -126,8 +126,8 @@ nav ul li a:hover {
     padding: 5px;
 }
 
-/* transparent background is:
-background: hsl(0 0% 100% / 0.1); 
+@media screen and (min-width:375px)  { .home-header { margin-top: 67px;} }
+@media screen and (min-width:414px)  { .home-header { margin-top: 127px;} }
+@media screen and (width:390px)  { .home-header { margin-top: 109px;} }
+@media screen and (min-width:540px)  { .home-header { margin-top: 50px;} }
 
-plus blur is 
-backdrop-filter: blur(1em);*/
