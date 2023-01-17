@@ -233,3 +233,8 @@ nav {
     margin-left: -45px;
     margin-top: -10px;
 }
+
+footer {
+    display: grid;
+    grid-template-rows: 1 / 3;
+}
