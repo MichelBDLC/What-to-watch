@@ -1,6 +1,6 @@
-require('dotenv').config();
 
-const watchModeKey = process.env.wmAPIKEY;
+
+const watchModeKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`;
 //api address for fetch 
 const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey + `&genres=1`;
 

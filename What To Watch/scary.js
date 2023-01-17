@@ -1,6 +1,5 @@
-require('dotenv').config();
 
-const watchModeKey = process.env.wmAPIKEY;
+const watchModeKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`
 //this fetch gets titles og comedy genre and deconstructs the data 
 const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey + `&genres=11,37,17`;
 

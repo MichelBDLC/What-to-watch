@@ -1,8 +1,7 @@
-require('dotenv').config();
 
 ///////failed attempt at building a working search bar
 
-const wmApiKey = process.env.wmAPIKEY;
+const wmApiKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`;
 
 const titleList = document.getElementById('titleList');
 
