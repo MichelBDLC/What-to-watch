@@ -1,7 +1,7 @@
 
 const watchModeKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`
-//this fetch gets titles og comedy genre and deconstructs the data 
-const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey; //+ `&genres=`
+
+const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey; //no need for specifications on api due to the need of randomness!
 
 
 fetch(watchModeTitlesApi)
@@ -48,7 +48,7 @@ console.log(network.ios_appstore_url)
 console.log(error);
 })
 })
-//ypu can try incorporating the moving video to make it look cooler
+
 })
 .catch((error) => {
 console.log(error);
