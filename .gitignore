@@ -1,3 +1,14 @@
-.env
-node_modules/
-title_id_map.csv
+# /node_modules
+# package-lock.json
+# package.json
+# /What To Watch/theData.csv
+# TheData.csv
+
+node_modules
+package-lock.json
+package.json
+.gitignore
+What To Watch/data.csv
+What To Watch/theData.csv
+
+

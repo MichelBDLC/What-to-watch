@@ -1,7 +1,7 @@
-
-
 const watchModeKey = `f5FR2cFHLSJM7i8v85X4ONnx1NUziXmKD6CaDBtj`;
-//api address for fetch 
+
+//add exclude 
+ 
 const watchModeTitlesApi = `https://api.watchmode.com/v1/list-titles/?apiKey=` + watchModeKey + `&genres=4`; //api specifically for genre data
 
 
@@ -25,7 +25,7 @@ let rightTitle = titles.find(theTitle => theTitle.title === document.querySelect
 
 //in the function below we gain access to more pieces of information to use on our website with the use of the id
 //Do to the fact that all of these variables are in local scope I continued fetching for more data within the same function
-
+    
 const watchModeTitleMegaDataApi = `https://api.watchmode.com/v1/title/` + rightTitle.id + `/details/?apiKey=` + watchModeKey; //this api requires individual ids and fetches data per title
 fetch(watchModeTitleMegaDataApi).then((response) => response.json()).then((watchModeTitleMegaData) => { //now we have access to all of the data we want of specific title of a specific genre
 
@@ -62,4 +62,33 @@ console.log(error);
 }) 
 }).catch((error) => {
 console.log(error);
+})
+
+
+const search = document.querySelector('.search-input');
+
+const results = document.querySelectorAll('.results');
+
+search.addEventListener('keyup', (event) => {
+    event.preventDefault();
+    const theInput = event.target.value.toLowerCase();
+
+    fetch(`https://api.watchmode.com/v1/search/?apiKey=` + watchModeKey + `&search_field=name&search_value=` + theInput)
+    .then((response) => response.json())
+    .then((data) => {
+
+        for (let title of data.title_results) {
+            let theTitle = title.name;
+
+            if (theTitle.toLowerCase().includes(theInput)) {
+
+                for (let result of results) {
+                    document.querySelector('.results').style.display = "list-item";
+                    result.textContent = theTitle;   
+                }
+            }
+        }
+    }).catch((error) => {
+        console.log(error);
+        })
 })

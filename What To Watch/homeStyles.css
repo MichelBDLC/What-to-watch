@@ -2,9 +2,8 @@ body {
     background: #23242a;
     margin: 0;
     padding: 0;
-    justify-content: center; /*removable*/
-    align-items: center; /*removable*/
-    /* flex-wrap: wrap;  */
+    justify-content: center; 
+    align-items: center; 
     }
 
 img {
@@ -53,16 +52,13 @@ nav {
     display: none;
     list-style: none;
     align-items: center;
-    /* padding-left: 10%; */
     padding-right: 5%;
-    /* justify-content: space-evenly; */
-    /*new styles start from here*/
     min-width: 15em;
     position: relative;
     margin: 2em;  
 }
 
-nav * { /*removable*/
+nav * { 
     box-sizing: content-box;
 }
 
@@ -91,6 +87,26 @@ nav ul li a:hover {
 
 .search-input:hover {
     width: 300px;
+}
+
+.result {
+    color: whitesmoke;
+    list-style: none;
+    margin: auto;   
+    margin-left: -35px;
+}
+
+.results {
+    display: none;
+}
+
+.result-link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.result-link:hover {
+    color: rgb(113, 86, 150);
 }
 
 .search-input {

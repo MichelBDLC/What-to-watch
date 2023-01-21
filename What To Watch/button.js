@@ -4,6 +4,3 @@ const nav = document.querySelector("nav");
 function show() {
     nav.style.display="list-item";
 }
-
-const searchbtn = document.querySelector('.search-btn');
-const searchInput = document.querySelector('search-input');

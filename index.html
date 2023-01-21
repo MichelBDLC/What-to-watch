@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <script defer src="./What To Watch/script.js"></script>
     <script defer src="./What To Watch/button.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script defer src="./What To Watch/script.js"></script>
     <link rel="stylesheet" href="./What To Watch/homeStyles.css" media="all"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>What Should I Watch Today App Homepage</title>
@@ -20,15 +21,13 @@
         <button type="button" class="show-nav-home-btn" onclick="show()"> Let's Watch <span class="caret down"></span></button> 
        <nav class="navigation">
             <ul class="navigation">
-              <form>
-                <li> <input type="text" class="search-input" placeholder="Something Specific"><button type="submit" class="search-btn"><i class="fa fa-search"></i> </button></li>
-              </form>
               <div class="somethings">
-                <li><a href="./What To Watch/funny.html"> Something Funny</a></li>
-                <li><a href="./What To Watch/anime.html"> Cartoon/ Anime</a> </li>
-                <li><a href="./What To Watch/scary.html"> Something Scary</a></li>
-                <li><a href="./What To Watch/romantics.html" > Something Romantic</a> </li>
-                <li><a href="./What To Watch/randoms.html"> Something Random</a></li>
+                <li><a href="./What To Watch/funny.html" class="something"> Something Funny </a></li>
+                <li><a href="./What To Watch/anime.html" class="something"> Cartoons </a></li>
+                <li><a href="./What To Watch/scary.html" class="something"> Something Scary </a></li>
+                <li><a href="./What To Watch/romantics.html" class="something"> Something Romantic </a></li>
+                <li><a href="./What To Watch/randoms.html" class="something"> Something Random </a></li>
+                <li class="result"><a href="./What To Watch/specific.html" class="result-link"></a> Search for something specific </li>
               </div>
             </ul>
        </nav>
