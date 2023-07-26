@@ -8,3 +8,6 @@ As of right now, as a new developer, the What To Watch app can only generate a r
 
 Whenever you're looking for something new to watch, try the What To Watch app. 
 
+![iScreen Shoter - Safari - 230726054007](https://github.com/MichelBDLC/What-to-watch/assets/103394185/df3cf5ab-9bc6-4659-9efa-5f7cefa23a71)
+
+
