@@ -10,4 +10,7 @@ Whenever you're looking for something new to watch, try the What To Watch app.
 
 ![iScreen Shoter - Safari - 230726054007](https://github.com/MichelBDLC/What-to-watch/assets/103394185/df3cf5ab-9bc6-4659-9efa-5f7cefa23a71)
 
+![iScreen Shoter - Safari - 230726054110](https://github.com/MichelBDLC/What-to-watch/assets/103394185/57fefb36-235d-46a4-9472-c8bc5bb195e8)
+
+
 
